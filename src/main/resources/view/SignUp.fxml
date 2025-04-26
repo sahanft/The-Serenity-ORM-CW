@@ -11,47 +11,11 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
-<?import javafx.scene.paint.LinearGradient?>
-<?import javafx.scene.paint.Stop?>
-<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="mainAnchor" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #f5f5f5;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.therapycenter.controller.SignUpController">
+<AnchorPane fx:id="mainAnchor" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #40ff00;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ijse.therapycenter.controller.SignUpController">
    <children>
-      <!-- Left side decorative panel -->
-      <Rectangle height="600.0" width="500.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
-         <fill>
-            <LinearGradient endX="1.0" endY="1.0">
-               <stops>
-                  <Stop>
-                     <color>
-                        <Color red="0.2" green="0.6" blue="0.8" />
-                     </color>
-                  </Stop>
-                  <Stop offset="1.0">
-                     <color>
-                        <Color red="0.4" green="0.3" blue="0.8" />
-                     </color>
-                  </Stop>
-               </stops>
-            </LinearGradient>
-         </fill>
-      </Rectangle>
-
-      <!-- Therapy center logo/branding text -->
-      <Text fill="WHITE" layoutX="120.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Therapy Center">
-         <font>
-            <Font name="Arial Bold" size="42.0" />
-         </font>
-         <effect>
-            <DropShadow height="5.0" radius="2.0" width="5.0">
-               <color>
-                  <Color opacity="0.25" />
-               </color>
-            </DropShadow>
-         </effect>
-      </Text>
 
       <Text fill="WHITE" layoutX="123.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0">
          <font>
@@ -60,7 +24,7 @@
       </Text>
 
       <!-- Right side signup form -->
-      <VBox alignment="CENTER" layoutX="550.0" layoutY="100.0" prefHeight="400.0" prefWidth="350.0" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 30;">
+      <VBox alignment="CENTER" layoutX="257.0" layoutY="33.0" prefHeight="534.0" prefWidth="479.0" spacing="15.0" style="-fx-background-color: white; -fx-background-radius: 10; -fx-padding: 30;">
          <effect>
             <DropShadow height="20.0" radius="9.5" width="20.0">
                <color>
@@ -69,7 +33,7 @@
             </DropShadow>
          </effect>
          <children>
-            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account">
+            <Text fill="#40ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Account">
                <font>
                   <Font name="Arial Bold" size="28.0" />
                </font>
@@ -85,19 +49,19 @@
                </VBox.margin>
             </HBox>
 
-            <TextField fx:id="txtUserName" prefHeight="40.0" prefWidth="250.0" promptText="Username" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
+            <TextField fx:id="txtUserName" prefHeight="32.0" prefWidth="250.0" promptText="Username" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
                <font>
                   <Font size="14.0" />
                </font>
             </TextField>
 
-            <PasswordField fx:id="txtPassword" prefHeight="40.0" prefWidth="250.0" promptText="Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
+            <PasswordField fx:id="txtPassword" prefHeight="32.0" prefWidth="250.0" promptText="Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
                <font>
                   <Font size="14.0" />
                </font>
             </PasswordField>
 
-            <PasswordField fx:id="txtConfirmPassword" prefHeight="40.0" prefWidth="250.0" promptText="Confirm Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
+            <PasswordField fx:id="txtConfirmPassword" prefHeight="32.0" prefWidth="250.0" promptText="Confirm Password" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;">
                <font>
                   <Font size="14.0" />
                </font>
@@ -105,16 +69,16 @@
 
             <HBox alignment="CENTER_LEFT" spacing="10.0">
                <children>
-                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Select Role:">
+                  <Text fill="#40ff00" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Role:">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font>
                   </Text>
-                  <ChoiceBox fx:id="choiceRole" prefHeight="40.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;" />
+                  <ChoiceBox fx:id="choiceRole" prefHeight="32.0" prefWidth="200.0" style="-fx-background-radius: 5; -fx-border-color: #e0e0e0; -fx-border-radius: 5;" />
                </children>
             </HBox>
 
-            <Button fx:id="btSignUp" mnemonicParsing="false" onAction="#navLogInPage" prefHeight="40.0" prefWidth="290.0" style="-fx-background-color: #4a6bff; -fx-background-radius: 5;" text="Sign Up" textFill="WHITE">
+            <Button fx:id="btSignUp" mnemonicParsing="false" onAction="#navLogInPage" prefHeight="32.0" prefWidth="290.0" style="-fx-background-color: #40ff00; -fx-background-radius: 5;" text="Sign Up" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font>
@@ -137,7 +101,7 @@
                         <Font name="Arial" size="14.0" />
                      </font>
                   </Text>
-                  <Text fill="#4a6bff" onMouseClicked="#navLogInPage" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Sign in">
+                  <Text fill="#40ff00" onMouseClicked="#navLogInPage" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="Sign in">
                      <font>
                         <Font name="Arial Bold" size="14.0" />
                      </font>

@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class Initializer extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        Parent load = FXMLLoader.load((getClass().getResource("/view/AdminDash.fxml")));
+        Parent load = FXMLLoader.load((getClass().getResource("/view/Login.fxml")));
         stage.setScene(new Scene(load));
         stage.setTitle("Center");
         stage.show();
